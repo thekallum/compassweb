@@ -212,7 +212,7 @@ Se o navegador não pedir usuário e senha:
 
 * **Verifique a URI de conexão:** O formato correto é `mongodb://usuario:senha@host:porta/database`
 * **Firewall:** Certifique-se de que o MongoDB aceita conexões remotas
-* **VLAN (Discloud):** Se ambos estiverem na Discloud, use `mongo.vlan` como hostname
+* **VLAN (Discloud):** Se ambos estiverem na Discloud, use `mongodb` como hostname
 * **Credenciais:** Confirme que o usuário tem permissões no banco de dados
 
 ### 🐳 O container não inicia
