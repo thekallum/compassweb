@@ -287,7 +287,7 @@ Este projeto está licenciado sob a **Apache License 2.0**.
 * 🛡️ **Garantia:** O software é fornecido "como está", sem garantias, e inclui uma cláusula de proteção de patentes para os usuários.
 
 > [!NOTE]
-> O [compass-web](https://github.com/haohanyang/compass-web) original possui sua própria licença, que deve ser respeitada ao usar a ferramenta base. Esta licença MIT aplica-se especificamente ao Dockerfile e ao script `start.js` desenvolvidos para containerização.
+> O [compass-web](https://github.com/haohanyang/compass-web) original possui sua própria licença, que deve ser respeitada ao usar a ferramenta base. Esta licença Apache 2.0 aplica-se especificamente ao Dockerfile e ao script `start.js` desenvolvidos para containerização.
 
 Para ler a licença completa, consulte o arquivo [LICENSE](./LICENSE) neste repositório.
 
