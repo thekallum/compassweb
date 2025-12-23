@@ -1,19 +1,16 @@
 const { spawn } = require("child_process");
 const fs = require("fs");
 
-// Copia as variáveis de ambiente atuais
 const env = { ...process.env };
 
 console.log("--> Iniciando script de wrapper do Compass Web...");
 
-// 1. Ler o arquivo .env linha por linha (Robustez para senhas com símbolos)
 if (fs.existsSync(".env")) {
   try {
     const content = fs.readFileSync(".env", "utf-8");
-    const lines = content.split(/\r?\n/); // Divide por quebra de linha (Windows ou Linux)
+    const lines = content.split(/\r?\n/);
     
     lines.forEach(line => {
-      // Ignora linhas vazias ou comentários
       if (!line || line.trim().startsWith("#")) return;
       
       const idx = line.indexOf("=");
@@ -22,12 +19,10 @@ if (fs.existsSync(".env")) {
       const key = line.slice(0, idx).trim();
       let val = line.slice(idx + 1).trim();
       
-      // Remove aspas duplas ou simples se existirem ao redor do valor
       if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
         val = val.slice(1, -1);
       }
       
-      // Só define se ainda não existir no ambiente (prioriza variáveis do sistema)
       if (!env[key]) {
         env[key] = val;
       }
@@ -40,10 +35,8 @@ if (fs.existsSync(".env")) {
   console.log("--> Arquivo .env não encontrado (usando apenas variáveis de ambiente).");
 }
 
-// 2. Monta os argumentos para o Compass Web
 const args = ["--port", env.PORT || "8080", "--host", "0.0.0.0"];
 
-// Adiciona a URI do Mongo (Obrigatória)
 if (env.CW_MONGO_URI) {
   args.push("--mongo-uri", env.CW_MONGO_URI);
 } else {
@@ -51,7 +44,6 @@ if (env.CW_MONGO_URI) {
   process.exit(1);
 }
 
-// 3. Configura Login e Senha (Opcional)
 if (env.CW_BASIC_AUTH_USERNAME && env.CW_BASIC_AUTH_PASSWORD) {
   console.log(`--> Modo Seguro: Login ativado para usuário '${env.CW_BASIC_AUTH_USERNAME}'`);
   args.push("--basic-auth-username", env.CW_BASIC_AUTH_USERNAME);
@@ -60,7 +52,6 @@ if (env.CW_BASIC_AUTH_USERNAME && env.CW_BASIC_AUTH_PASSWORD) {
   console.log("--> Aviso: Rodando em modo público (sem senha de acesso ao site).");
 }
 
-// 4. Inicia o Processo Real
 console.log("--> Executando compass-web...");
 const child = spawn("compass-web", args, { stdio: "inherit", env: env });
 
