@@ -32,7 +32,7 @@ Uma versão web do MongoDB Compass, containerizada e pronta para deploy, permiti
 * [📂 Estrutura do Projeto](#-estrutura-do-projeto)
 * [🤝 Como Contribuir](#-como-contribuir)
 * [⚖️ Licença](#licenca)
-* [🙏 Créditos](#-créditos)
+* [🤙 Créditos](#-créditos)
 
 ---
 
