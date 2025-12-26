@@ -74,7 +74,7 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 
 ## 🚀 Como Rodar o Projeto Localmente
 
-### 🐳 Rodando com Docker (Método Recomendado)
+### 🐳 Rodando com Docker
 
 #### 1. Clone o repositório
 ```bash
