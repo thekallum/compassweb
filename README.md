@@ -309,4 +309,6 @@ O Dockerfile e script `start.js` foram desenvolvidos para facilitar o deploy em 
 
 Feito com 🧡 por [**Kallum**](https://github.com/thekallum)
 
+⭐ Se este projeto te ajudou, considere dar uma estrela!
+
 </div>
