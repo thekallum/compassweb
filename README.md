@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Concluido-green?logo=github&style=for-the-badge)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue.svg?logo=docker&logoColor=white&style=for-the-badge)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Compass-grass?logo=mongodb&logoColor=white&style=for-the-badge)
-![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg?logo=apache&style=for-the-badge)
+![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg?logo=mozilla&style=for-the-badge)
 
 **MongoDB Compass direto no navegador.**
 <br>
@@ -25,7 +25,7 @@ Uma versão web do MongoDB Compass, containerizada e pronta para deploy, permiti
 * [🛠️ Tecnologias Utilizadas](#tecnologias)
 * [💻 Pré-requisitos](#-pré-requisitos)
 * [🚀 Como Rodar o Projeto Localmente](#-como-rodar-o-projeto-localmente)
-* [🐳 Rodando com Docker (Método Recomendado)](#-rodando-com-docker-método-recomendado)
+* [🐳 Rodando com Docker](#-rodando-com-docker)
 * [🚀 Deploy em Produção](#-deploy-em-produção)
   * [Discloud (Recomendado)](#discloud-recomendado)
 * [❓ FAQ & Solução de Problemas](#-perguntas-frequentes-faq--solução-de-problemas)
@@ -277,20 +277,21 @@ Contribuições são sempre bem-vindas! Se você tem uma ideia de melhoria:
 ---
 
 ## <a id="licenca"></a>⚖️ Licença
-
-Este projeto está licenciado sob a **Apache License 2.0**.
-
+ 
+Este projeto está licenciado sob a **Mozilla Public License 2.0 (MPL-2.0)**.
+ 
 ### Resumo:
-* ✅ **Você pode:** Usar comercialmente, modificar, distribuir e sublicenciar.
-* ❌ **Você NÃO pode:** Usar o nome do autor ou marcas registradas para endossar produtos derivados sem permissão explícita.
-* 🏷️ **Obrigatório:** Incluir uma cópia da licença e os avisos de copyright originais em qualquer redistribuição.
-* 🛡️ **Garantia:** O software é fornecido "como está", sem garantias, e inclui uma cláusula de proteção de patentes para os usuários.
+* ✅ **Você pode:** Usar comercialmente, modificar, distribuir, usar de forma privada e contar com a concessão de patentes dos contribuidores.
+* ❌ **Você NÃO pode:** Usar o nome, as marcas ou os logotipos do autor sem permissão, nem responsabilizá-lo pelo uso do software.
+* 🏷️ **Obrigatório:** Disponibilizar o código-fonte dos arquivos cobertos pela licença, incluindo as suas modificações, sob a mesma MPL 2.0 (*copyleft* por arquivo), e manter os avisos de licença e de copyright.
+* 🧩 **Flexibilidade:** Você pode combinar o código com arquivos próprios, que podem ter outra licença, desde que cumpra a MPL 2.0 nos arquivos cobertos por ela.
+* 🛡️ **Garantia:** O software é fornecido "como está", sem garantias de qualquer tipo.
 
 > [!NOTE]
 > O [compass-web](https://github.com/haohanyang/compass-web) original possui sua própria licença, que deve ser respeitada ao usar a ferramenta base. Esta licença Apache 2.0 aplica-se especificamente ao Dockerfile e ao script `start.js` desenvolvidos para containerização.
 
-Para ler a licença completa, consulte o arquivo [LICENSE](./LICENSE) neste repositório.
-
+> [!TIP]
+> Já que esse resumo não substitui a licença caso queira ler o texto legal completo, consulte o arquivo [LICENSE](./LICENSE) neste repositório ou a [página oficial da MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
 
 ---
 
