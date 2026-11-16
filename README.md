@@ -288,7 +288,7 @@ Este projeto está licenciado sob a **Mozilla Public License 2.0 (MPL-2.0)**.
 * 🛡️ **Garantia:** O software é fornecido "como está", sem garantias de qualquer tipo.
 
 > [!NOTE]
-> O [compass-web](https://github.com/haohanyang/compass-web) original possui sua própria licença, que deve ser respeitada ao usar a ferramenta base. Esta licença Apache 2.0 aplica-se especificamente ao Dockerfile e ao script `start.js` desenvolvidos para containerização.
+> O [compass-web](https://github.com/haohanyang/compass-web) original possui sua própria licença, que deve ser respeitada ao usar a ferramenta base. Esta licença MPL 2.0 aplica-se especificamente ao Dockerfile e ao script `start.js` desenvolvidos para containerização.
 
 > [!TIP]
 > Já que esse resumo não substitui a licença caso queira ler o texto legal completo, consulte o arquivo [LICENSE](./LICENSE) neste repositório ou a [página oficial da MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
